@@ -1,0 +1,6 @@
+<button (click)="onToggleDetails()">DISPLAY DETAILS</button>
+<p *ngIf="showSecret">Password: Tuna</p>
+<div 
+  *ngFor="let logItem of log"
+  [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+>{{logItem}}</div>
