@@ -1,0 +1,5 @@
+<hr>
+<label>Username Input</label><br>
+<input type="text" (input)="onUpdateInput($event)">
+<button (click)="onCheck()" [disabled]="updateInputName == ''">BUTTON</button>
+<p>{{ updateInputName }}</p>

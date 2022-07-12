@@ -1,0 +1,6 @@
+<button [disabled]="!allowNewServer" (click)="onCreateServer()">BUTTON</button> <!-- event biding (click) -->
+<p>{{ serverCreated }}</p>
+<p [ngStyle]="{backgroundColor:getColor()}">Server with ID {{ serverId }} is is {{ serverStatus}}</p>
+<label>Server Name</label><br>
+<input type="text" (input)="onUpdateInputName($event)"> <!-- O $event salva oque o usuario escreveu na tela para mostrar depois -->
+<p>{{ inputName }}</p>
